@@ -28,7 +28,7 @@
 # 下載Git
 https://git-scm.com/download/win
 
-# 使用者設定
+ # `使用者設定`
 ```git
 $ git config --global user.name "Kuma Chen"
 $ git config --global user.email "Kuma@mail.tw"
@@ -142,7 +142,7 @@ https://gitbook.tw/chapters/command-line/command-line.html
 
 # GUI推薦
 
-> GitKarKen
+> GitKraKen
 > 
 
 # 書籍/學習資源推薦
