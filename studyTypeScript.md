@@ -81,3 +81,46 @@ truthy
 
 在JS中，有許多數值，在邏輯判斷中，其結果與```false```等價。由於其數值實際並非```false```，因此，特別稱此數值為**falsy value**
 
+
+
+
+foreach 
+
+- in
+```
+for (變數 in 物件) {...
+}
+
+var o = {a:1, b:2, c:3};
+
+function show_props(obj, objName) {
+  var result = "";
+    
+  for (var prop in obj) {
+    result += objName + "." + prop + " = " + obj[prop] + "\n";
+  }
+    
+  return result;
+}
+
+alert(show_props(o, "o")); /* alerts (in different lines): o.a = 1 o.b = 2 o.c = 3 */ 
+
+```
+- of
+```
+const array1 = ['a', 'b', 'c'];
+
+for (const element of array1) {
+  console.log(element);
+}
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
+
+
+```
+
+
+boolean||
+null??

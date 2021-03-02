@@ -232,3 +232,83 @@ https://angular.io/guide/router#resolve-pre-fetching-component-data
 
 先建一個service
 在
+
+
+===============
+
+Validators.pattern(正則表達式)
+
+[預設值,驗證,非同步驗證]
+formControl
+form.get("").disable(); //群組則無法，只有單一值可以。
+form.get("").enbable(); //群組則無法，只有單一值可以。
+
+.set
+.patch
+//formControl時一樣
+//formgroup有差(如果用SET沒有把值填滿會跳訊息說)
+//
+setValue()必須餵值
+
+如果是PatchVaule
+PatchVaule
+一般 form 裡面的資料可以用 patchValue() ：
+**重要，PatchVaule不能放陣列**
+對於 FormArray 資料另外用 setControl() 去覆蓋：
+.reset重製
+.value 可以取得值
+
+使用GET好處是
+如果
+
+
+```
+{
+    address:{
+        address1:'';
+    }
+    a.get('address.address1').add
+    a.controls.address.controls.address1
+    第二種寫法比要嚴謹
+
+}
+```
+
+
+
+formData.getRawVaule>才會不管disabele的值
+formData.vaule> 會忽略disablead
+
+
+
+
+version>條件應該是統一處理而不是散落各處
+
+
+ActivatedRouter 取得當前的
+Router 透過整體路由
+
+可以做到動態表單<
+
+
+
+===============
+
+ ||< 遇到0會有問題(會跑f)
+
+ ??<0為TRUE
+
+
+
+ ### *ngTemplateOutlet
+ 好用的東西
+====
+
+### ngAfterViewInit()
+生命週期
+偵測路由變更
+
+======
+ ### resolve[]
+寫在router.ts中
+保證了資料獲取後再進行路由跳轉，防止因為資料延遲而出現短暫的空元件情況，以此增強使用者體驗。
